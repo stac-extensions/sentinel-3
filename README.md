@@ -79,30 +79,30 @@ The fields in the table below can be used in these parts of STAC documents:
 | Field Name       | Type   | Description            |
 | ---------------- | ------ | ---------------------- |
 | band_width       | number |                        |
-| description      | string |                        |
+| description      | string | Detailed multi-line description to explain the band. [CommonMark 0.29](http://commonmark.org/) syntax MAY be used for rich text representation. |
 | frequency_band   | string | `Ku`, `C`, ...         |
 | center_frequency | number | e.g. 5.41, 13.575, ... |
 
 ### SRAL GSD Object
 
-| Field Name   | Type    | Description |
-| ------------ | ------- | ----------- |
-| along-track  | integer |             |
-| across-track | integer |             |
+| Field Name   | Type    | Description   |
+| ------------ | ------- | ------------- |
+| along-track  | integer | **REQUIRED.** |
+| across-track | integer | **REQUIRED.** |
 
 ### Synergy GSD Object
 
-| Field Name | Type                                  | Description |
-| ---------- | ------------------------------------- | ----------- |
-| OLCI       | integer                               |             |
-| SLSTR      | [SLSTR GSD Object](#slstr-gsd-object) |             |
+| Field Name | Type                                  | Description   |
+| ---------- | ------------------------------------- | ------------- |
+| OLCI       | integer                               | **REQUIRED.** |
+| SLSTR      | [SLSTR GSD Object](#slstr-gsd-object) | **REQUIRED.** |
 
 ### SLSTR GSD Object
 
-| Field Name      | Type    | Description |
-| --------------- | ------- | ----------- |
-| S1-S6           | integer |             |
-| S7-S9 and F1-F2 | integer |             |
+| Field Name      | Type    | Description   |
+| --------------- | ------- | ------------- |
+| S1-S6           | integer | **REQUIRED.** |
+| S7-S9 and F1-F2 | integer | **REQUIRED.** |
 
 ## Contributing
 

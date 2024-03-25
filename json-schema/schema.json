@@ -21,7 +21,8 @@
       "type": "object",
       "required": [
         "type",
-        "properties"
+        "properties",
+        "assets"
       ],
       "properties": {
         "type": {
@@ -36,6 +37,9 @@
               "$ref": "#/definitions/fields"
             }
           ]
+        },
+        "assets": {
+          "$ref": "#/definitions/assets"
         }
       }
     },
@@ -52,6 +56,12 @@
         },
         "summaries": {
           "$ref": "#/definitions/require_any"
+        },
+        "item_assets": {
+          "$ref": "#/definitions/assets"
+        },
+        "assets": {
+          "$ref": "#/definitions/assets"
         }
       }
     }
@@ -60,21 +70,192 @@
     "require_any": {
       "$comment": "Please list all fields here so that we can force the existence of one of them in other parts of the schemas.",
       "anyOf": [
-        {"required": ["s3:xxx"]}
+        {"required": ["s3:product_type"]},
+        {"required": ["s3:product_name"]},
+        {"required": ["s3:processing_timeliness"]},
+        {"required": ["s3:gsd"]},
+        {"required": ["s3:lrm_mode"]},
+        {"required": ["s3:sar_mode"]},
+        {"required": ["s3:bright"]},
+        {"required": ["s3:closed_sea"]},
+        {"required": ["s3:coastal"]},
+        {"required": ["s3:continental_ice"]},
+        {"required": ["s3:cosmetic"]},
+        {"required": ["s3:dubious_samples"]},
+        {"required": ["s3:duplicated"]},
+        {"required": ["s3:fresh_inland_water"]},
+        {"required": ["s3:invalid"]},
+        {"required": ["s3:land"]},
+        {"required": ["s3:open_ocean"]},
+        {"required": ["s3:out_of_range"]},
+        {"required": ["s3:saline_water"]},
+        {"required": ["s3:saturated"]},
+        {"required": ["s3:tidal_region"]}
       ]
     },
     "fields": {
       "$comment": " Don't require fields here, do that above in the corresponding schema.",
       "type": "object",
       "properties": {
-        "s3:xxx": {
+        "s3:product_type": {
           "type": "string"
+        },
+        "s3:product_name": {
+          "type": "string"
+        },
+        "s3:processing_timeliness": {
+          "type": "string"
+        },
+        "s3:gsd": {
+          "oneOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "title": "SRAL GSD Object",
+              "type": "object",
+              "required": ["along-track", "across-track"],
+              "properties": {
+                "along-track": {
+                  "type": "integer"
+                },
+                "across-track": {
+                  "type": "integer"
+                }
+              },
+              "additionalProperties": false
+            },
+            {
+              "title": "Synergy GSD Object",
+              "type": "object",
+              "required": ["OLCI", "SLSTR"],
+              "properties": {
+                "OLCI": {
+                  "type": "integer"
+                },
+                "SLSTR": {
+                  "$ref": "#/definitions/SLSTR"
+                }
+              },
+              "additionalProperties": false
+            }, 
+            {
+              "$ref": "#/definitions/SLSTR"
+            }
+          ]
+        },
+        "s3:lrm_mode": {
+          "type": "number"
+        },
+        "s3:sar_mode": {
+          "type": "number"
+        },
+        "s3:bright": {
+          "type": "number"
+        },
+        "s3:closed_sea": {
+          "type": "number"
+        },
+        "s3:coastal": {
+          "type": "number"
+        },
+        "s3:continental_ice": {
+          "type": "number"
+        },
+        "s3:cosmetic": {
+          "type": "number"
+        },
+        "s3:dubious_samples": {
+          "type": "number"
+        },
+        "s3:duplicated": {
+          "type": "number"
+        },
+        "s3:fresh_inland_water": {
+          "type": "number"
+        },
+        "s3:invalid": {
+          "type": "number"
+        },
+        "s3:land": {
+          "type": "number"
+        },
+        "s3:open_ocean": {
+          "type": "number"
+        },
+        "s3:out_of_range": {
+          "type": "number"
+        },
+        "s3:saline_water": {
+          "type": "number"
+        },
+        "s3:saturated": {
+          "type": "number"
+        },
+        "s3:tidal_region": {
+          "type": "number"
+        },
+        "s3:snow_or_ice": {
+          "type": "number"
         }
       },
       "patternProperties": {
         "^(?!s3:)": {}
       },
       "additionalProperties": false
+    },
+    "SLSTR": {
+      "title": "SLSTR GSD Object",
+      "type": "object",
+      "required": ["S1-S6", "S7-S9 and F1-F2"],
+      "properties": {
+        "S1-S6": {
+          "type": "integer"
+        },
+        "S7-S9 and F1-F2": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "assets": {
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "s3:shape": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "s3:spatial_resolution": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "s3:altimetry_bands": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "band_width": {
+                  "type": "number"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "frequency_band": {
+                  "type": "string"
+                },
+                "center_frequency": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
