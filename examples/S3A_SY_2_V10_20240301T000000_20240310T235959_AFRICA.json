@@ -1,0 +1,1565 @@
+{
+  "id": "S3A_SY_2_V10_20240301T000000_20240310T235959_AFRICA",
+  "bbox": [
+    -25.9911,
+    -35,
+    60,
+    37.9911
+  ],
+  "type": "Feature",
+  "links": [
+    {
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-synergy-v10-l2-netcdf"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-synergy-v10-l2-netcdf"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-synergy-v10-l2-netcdf/items/S3A_SY_2_V10_20240301T000000_20240310T235959_AFRICA"
+    }
+  ],
+  "assets": {
+    "ag": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/ag.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 23200186,
+      "file:checksum": "c31662f9c2b5b0f3d3380ab78994c8c7",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Aerosol optical thickness data"
+    },
+    "b0": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/B0.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 47866096,
+      "file:checksum": "132fd1ed89df61ea3ec4afe448daade9",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B0",
+          "description": "OLCI channels Oa02, Oa03",
+          "center_wavelength": 0.45,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Surface Reflectance Data Set associated with VGT-B0 channel"
+    },
+    "b2": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/B2.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 51772661,
+      "file:checksum": "23076bdc4862fb62d83b117097b12188",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B2",
+          "description": "OLCI channels Oa06, Oa07, Oa08, Oa09, Oa10",
+          "center_wavelength": 0.645,
+          "full_width_half_max": 0.035
+        }
+      ],
+      "description": "Surface Reflectance Data Set associated with VGT-B2 channel"
+    },
+    "b3": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/B3.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 53894994,
+      "file:checksum": "b5acd73492723e29a5cb422e8b7cce94",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B3",
+          "description": "OLCI channels Oa16, Oa17, Oa18, Oa21",
+          "center_wavelength": 0.835,
+          "full_width_half_max": 0.055
+        }
+      ],
+      "description": "Surface Reflectance Data Set associated with VGT-B3 channel"
+    },
+    "og": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/og.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 700327,
+      "file:checksum": "309db7f4fc3d0e050c18defccf9e6e1c",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Total Ozone column data"
+    },
+    "sm": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/sm.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 4138879,
+      "file:checksum": "ca1747ff51c6234950649d1681f49479",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Status Map data"
+    },
+    "tg": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/tg.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 15584631,
+      "file:checksum": "998f072382545e1256175e81f618a882",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Synthesis time data"
+    },
+    "mir": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/MIR.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 54167116,
+      "file:checksum": "297d4138776b3d0d80697921938ddf17",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "MIR",
+          "description": "SLSTR nadir and oblique channels S5, S6",
+          "center_wavelength": 1.665,
+          "full_width_half_max": 0.085
+        }
+      ],
+      "description": "Surface Reflectance Data Set associated with VGT-MIR channel"
+    },
+    "saa": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/saa.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 8123454,
+      "file:checksum": "06498ab088e83a8ddb91eea1c7e93fef",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Solar azimuth angle data"
+    },
+    "sza": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/sza.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 9579021,
+      "file:checksum": "e22b2a250fafb88fdb222e5aaa13362c",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Solar zenith angle data"
+    },
+    "vaa": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/vaa.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 6341018,
+      "file:checksum": "b42da5cf5e67d8318ae356348db13560",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "View azimuth angle data"
+    },
+    "vza": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/vza.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 13919214,
+      "file:checksum": "eb875f88b016c2de734d22116e779590",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "View zenith angle data"
+    },
+    "wvg": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/wvg.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 14490535,
+      "file:checksum": "b70541f0b33e23f7f3c37852ab7547e9",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Total column Water vapour data"
+    },
+    "ndvi": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/NDVI.nc",
+      "s3:shape": [
+        8176,
+        9632
+      ],
+      "file:size": 25030748,
+      "file:checksum": "87f8933dd3ae3bac84145ef43bf4a400",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B2",
+          "description": "OLCI channels Oa06, Oa07, Oa08, Oa09, Oa10",
+          "center_wavelength": 0.645,
+          "full_width_half_max": 0.035
+        },
+        {
+          "name": "B3",
+          "description": "OLCI channels Oa16, Oa17, Oa18, Oa21",
+          "center_wavelength": 0.835,
+          "full_width_half_max": 0.055
+        }
+      ],
+      "description": "Normalised difference vegetation index"
+    },
+    "safe-manifest": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/xfdumanifest.xml",
+      "file:size": 6510382,
+      "file:checksum": "03fc4f835b962fa84722d32871488458",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "SAFE product manifest"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -25.9911,
+          -35
+        ],
+        [
+          -21.4643,
+          -35
+        ],
+        [
+          -16.9375,
+          -35
+        ],
+        [
+          -12.4107,
+          -35
+        ],
+        [
+          -7.8839,
+          -35
+        ],
+        [
+          -3.3571,
+          -35
+        ],
+        [
+          1.1696,
+          -35
+        ],
+        [
+          5.6964,
+          -35
+        ],
+        [
+          10.2232,
+          -35
+        ],
+        [
+          14.75,
+          -35
+        ],
+        [
+          19.2768,
+          -35
+        ],
+        [
+          23.8036,
+          -35
+        ],
+        [
+          28.3304,
+          -35
+        ],
+        [
+          32.8571,
+          -35
+        ],
+        [
+          37.3839,
+          -35
+        ],
+        [
+          41.9107,
+          -35
+        ],
+        [
+          46.4375,
+          -35
+        ],
+        [
+          50.9643,
+          -35
+        ],
+        [
+          55.4911,
+          -35
+        ],
+        [
+          60,
+          -35
+        ],
+        [
+          60,
+          -34.5804
+        ],
+        [
+          60,
+          -34.0089
+        ],
+        [
+          60,
+          -33.4375
+        ],
+        [
+          60,
+          -32.8661
+        ],
+        [
+          60,
+          -32.2946
+        ],
+        [
+          60,
+          -31.7232
+        ],
+        [
+          60,
+          -31.1518
+        ],
+        [
+          60,
+          -30.5804
+        ],
+        [
+          60,
+          -30.0089
+        ],
+        [
+          60,
+          -29.4375
+        ],
+        [
+          60,
+          -28.8661
+        ],
+        [
+          60,
+          -28.2946
+        ],
+        [
+          60,
+          -27.7232
+        ],
+        [
+          60,
+          -27.1518
+        ],
+        [
+          60,
+          -26.5804
+        ],
+        [
+          60,
+          -26.0089
+        ],
+        [
+          60,
+          -25.4375
+        ],
+        [
+          60,
+          -24.8661
+        ],
+        [
+          60,
+          -24.2946
+        ],
+        [
+          60,
+          -23.7232
+        ],
+        [
+          60,
+          -23.1518
+        ],
+        [
+          60,
+          -22.5804
+        ],
+        [
+          60,
+          -22.0089
+        ],
+        [
+          60,
+          -21.4375
+        ],
+        [
+          60,
+          -20.8661
+        ],
+        [
+          60,
+          -20.2946
+        ],
+        [
+          60,
+          -19.7232
+        ],
+        [
+          60,
+          -19.1518
+        ],
+        [
+          60,
+          -18.5804
+        ],
+        [
+          60,
+          -18.0089
+        ],
+        [
+          60,
+          -17.4375
+        ],
+        [
+          60,
+          -16.8661
+        ],
+        [
+          60,
+          -16.2946
+        ],
+        [
+          60,
+          -15.7232
+        ],
+        [
+          60,
+          -15.1518
+        ],
+        [
+          60,
+          -14.5804
+        ],
+        [
+          60,
+          -14.0089
+        ],
+        [
+          60,
+          -13.4375
+        ],
+        [
+          60,
+          -12.8661
+        ],
+        [
+          60,
+          -12.2946
+        ],
+        [
+          60,
+          -11.7232
+        ],
+        [
+          60,
+          -11.1518
+        ],
+        [
+          60,
+          -10.5804
+        ],
+        [
+          60,
+          -10.0089
+        ],
+        [
+          60,
+          -9.4375
+        ],
+        [
+          60,
+          -8.8661
+        ],
+        [
+          60,
+          -8.2946
+        ],
+        [
+          60,
+          -7.7232
+        ],
+        [
+          60,
+          -7.1518
+        ],
+        [
+          60,
+          -6.5804
+        ],
+        [
+          60,
+          -6.0089
+        ],
+        [
+          60,
+          -5.4375
+        ],
+        [
+          60,
+          -4.8661
+        ],
+        [
+          60,
+          -4.2946
+        ],
+        [
+          60,
+          -3.7232
+        ],
+        [
+          60,
+          -3.1518
+        ],
+        [
+          60,
+          -2.5804
+        ],
+        [
+          60,
+          -2.0089
+        ],
+        [
+          60,
+          -1.4375
+        ],
+        [
+          60,
+          -0.8661
+        ],
+        [
+          60,
+          -0.2946
+        ],
+        [
+          60,
+          0.2768
+        ],
+        [
+          60,
+          0.8482
+        ],
+        [
+          60,
+          1.4196
+        ],
+        [
+          60,
+          1.9911
+        ],
+        [
+          60,
+          2.5625
+        ],
+        [
+          60,
+          3.1339
+        ],
+        [
+          60,
+          3.7054
+        ],
+        [
+          60,
+          4.2768
+        ],
+        [
+          60,
+          4.8482
+        ],
+        [
+          60,
+          5.4196
+        ],
+        [
+          60,
+          5.9911
+        ],
+        [
+          60,
+          6.5625
+        ],
+        [
+          60,
+          7.1339
+        ],
+        [
+          60,
+          7.7054
+        ],
+        [
+          60,
+          8.2768
+        ],
+        [
+          60,
+          8.8482
+        ],
+        [
+          60,
+          9.4196
+        ],
+        [
+          60,
+          9.9911
+        ],
+        [
+          60,
+          10.5625
+        ],
+        [
+          60,
+          11.1339
+        ],
+        [
+          60,
+          11.7054
+        ],
+        [
+          60,
+          12.2768
+        ],
+        [
+          60,
+          12.8482
+        ],
+        [
+          60,
+          13.4196
+        ],
+        [
+          60,
+          13.9911
+        ],
+        [
+          60,
+          14.5625
+        ],
+        [
+          60,
+          15.1339
+        ],
+        [
+          60,
+          15.7054
+        ],
+        [
+          60,
+          16.2768
+        ],
+        [
+          60,
+          16.8482
+        ],
+        [
+          60,
+          17.4196
+        ],
+        [
+          60,
+          17.9911
+        ],
+        [
+          60,
+          18.5625
+        ],
+        [
+          60,
+          19.1339
+        ],
+        [
+          60,
+          19.7054
+        ],
+        [
+          60,
+          20.2768
+        ],
+        [
+          60,
+          20.8482
+        ],
+        [
+          60,
+          21.4196
+        ],
+        [
+          60,
+          21.9911
+        ],
+        [
+          60,
+          22.5625
+        ],
+        [
+          60,
+          23.1339
+        ],
+        [
+          60,
+          23.7054
+        ],
+        [
+          60,
+          24.2768
+        ],
+        [
+          60,
+          24.8482
+        ],
+        [
+          60,
+          25.4196
+        ],
+        [
+          60,
+          25.9911
+        ],
+        [
+          60,
+          26.5625
+        ],
+        [
+          60,
+          27.1339
+        ],
+        [
+          60,
+          27.7054
+        ],
+        [
+          60,
+          28.2768
+        ],
+        [
+          60,
+          28.8482
+        ],
+        [
+          60,
+          29.4196
+        ],
+        [
+          60,
+          29.9911
+        ],
+        [
+          60,
+          30.5625
+        ],
+        [
+          60,
+          31.1339
+        ],
+        [
+          60,
+          31.7054
+        ],
+        [
+          60,
+          32.2768
+        ],
+        [
+          60,
+          32.8482
+        ],
+        [
+          60,
+          33.4196
+        ],
+        [
+          60,
+          33.9911
+        ],
+        [
+          60,
+          34.5625
+        ],
+        [
+          60,
+          35.1339
+        ],
+        [
+          60,
+          35.7054
+        ],
+        [
+          60,
+          36.2768
+        ],
+        [
+          60,
+          36.8482
+        ],
+        [
+          60,
+          37.4196
+        ],
+        [
+          60,
+          37.9911
+        ],
+        [
+          55.4911,
+          37.9911
+        ],
+        [
+          50.9643,
+          37.9911
+        ],
+        [
+          46.4375,
+          37.9911
+        ],
+        [
+          41.9107,
+          37.9911
+        ],
+        [
+          37.3839,
+          37.9911
+        ],
+        [
+          32.8571,
+          37.9911
+        ],
+        [
+          28.3304,
+          37.9911
+        ],
+        [
+          23.8036,
+          37.9911
+        ],
+        [
+          19.2768,
+          37.9911
+        ],
+        [
+          14.75,
+          37.9911
+        ],
+        [
+          10.2232,
+          37.9911
+        ],
+        [
+          5.6964,
+          37.9911
+        ],
+        [
+          1.1696,
+          37.9911
+        ],
+        [
+          -3.3571,
+          37.9911
+        ],
+        [
+          -7.8839,
+          37.9911
+        ],
+        [
+          -12.4107,
+          37.9911
+        ],
+        [
+          -16.9375,
+          37.9911
+        ],
+        [
+          -21.4643,
+          37.9911
+        ],
+        [
+          -25.9911,
+          37.9911
+        ],
+        [
+          -25.9911,
+          37.4196
+        ],
+        [
+          -25.9911,
+          36.8482
+        ],
+        [
+          -25.9911,
+          36.2768
+        ],
+        [
+          -25.9911,
+          35.7054
+        ],
+        [
+          -25.9911,
+          35.1339
+        ],
+        [
+          -25.9911,
+          34.5625
+        ],
+        [
+          -25.9911,
+          33.9911
+        ],
+        [
+          -25.9911,
+          33.4196
+        ],
+        [
+          -25.9911,
+          32.8482
+        ],
+        [
+          -25.9911,
+          32.2768
+        ],
+        [
+          -25.9911,
+          31.7054
+        ],
+        [
+          -25.9911,
+          31.1339
+        ],
+        [
+          -25.9911,
+          30.5625
+        ],
+        [
+          -25.9911,
+          29.9911
+        ],
+        [
+          -25.9911,
+          29.4196
+        ],
+        [
+          -25.9911,
+          28.8482
+        ],
+        [
+          -25.9911,
+          28.2768
+        ],
+        [
+          -25.9911,
+          27.7054
+        ],
+        [
+          -25.9911,
+          27.1339
+        ],
+        [
+          -25.9911,
+          26.5625
+        ],
+        [
+          -25.9911,
+          25.9911
+        ],
+        [
+          -25.9911,
+          25.4196
+        ],
+        [
+          -25.9911,
+          24.8482
+        ],
+        [
+          -25.9911,
+          24.2768
+        ],
+        [
+          -25.9911,
+          23.7054
+        ],
+        [
+          -25.9911,
+          23.1339
+        ],
+        [
+          -25.9911,
+          22.5625
+        ],
+        [
+          -25.9911,
+          21.9911
+        ],
+        [
+          -25.9911,
+          21.4196
+        ],
+        [
+          -25.9911,
+          20.8482
+        ],
+        [
+          -25.9911,
+          20.2768
+        ],
+        [
+          -25.9911,
+          19.7054
+        ],
+        [
+          -25.9911,
+          19.1339
+        ],
+        [
+          -25.9911,
+          18.5625
+        ],
+        [
+          -25.9911,
+          17.9911
+        ],
+        [
+          -25.9911,
+          17.4196
+        ],
+        [
+          -25.9911,
+          16.8482
+        ],
+        [
+          -25.9911,
+          16.2768
+        ],
+        [
+          -25.9911,
+          15.7054
+        ],
+        [
+          -25.9911,
+          15.1339
+        ],
+        [
+          -25.9911,
+          14.5625
+        ],
+        [
+          -25.9911,
+          13.9911
+        ],
+        [
+          -25.9911,
+          13.4196
+        ],
+        [
+          -25.9911,
+          12.8482
+        ],
+        [
+          -25.9911,
+          12.2768
+        ],
+        [
+          -25.9911,
+          11.7054
+        ],
+        [
+          -25.9911,
+          11.1339
+        ],
+        [
+          -25.9911,
+          10.5625
+        ],
+        [
+          -25.9911,
+          9.9911
+        ],
+        [
+          -25.9911,
+          9.4196
+        ],
+        [
+          -25.9911,
+          8.8482
+        ],
+        [
+          -25.9911,
+          8.2768
+        ],
+        [
+          -25.9911,
+          7.7054
+        ],
+        [
+          -25.9911,
+          7.1339
+        ],
+        [
+          -25.9911,
+          6.5625
+        ],
+        [
+          -25.9911,
+          5.9911
+        ],
+        [
+          -25.9911,
+          5.4196
+        ],
+        [
+          -25.9911,
+          4.8482
+        ],
+        [
+          -25.9911,
+          4.2768
+        ],
+        [
+          -25.9911,
+          3.7054
+        ],
+        [
+          -25.9911,
+          3.1339
+        ],
+        [
+          -25.9911,
+          2.5625
+        ],
+        [
+          -25.9911,
+          1.9911
+        ],
+        [
+          -25.9911,
+          1.4196
+        ],
+        [
+          -25.9911,
+          0.8482
+        ],
+        [
+          -25.9911,
+          0.2768
+        ],
+        [
+          -25.9911,
+          -0.2946
+        ],
+        [
+          -25.9911,
+          -0.8661
+        ],
+        [
+          -25.9911,
+          -1.4375
+        ],
+        [
+          -25.9911,
+          -2.0089
+        ],
+        [
+          -25.9911,
+          -2.5804
+        ],
+        [
+          -25.9911,
+          -3.1518
+        ],
+        [
+          -25.9911,
+          -3.7232
+        ],
+        [
+          -25.9911,
+          -4.2946
+        ],
+        [
+          -25.9911,
+          -4.8661
+        ],
+        [
+          -25.9911,
+          -5.4375
+        ],
+        [
+          -25.9911,
+          -6.0089
+        ],
+        [
+          -25.9911,
+          -6.5804
+        ],
+        [
+          -25.9911,
+          -7.1518
+        ],
+        [
+          -25.9911,
+          -7.7232
+        ],
+        [
+          -25.9911,
+          -8.2946
+        ],
+        [
+          -25.9911,
+          -8.8661
+        ],
+        [
+          -25.9911,
+          -9.4375
+        ],
+        [
+          -25.9911,
+          -10.0089
+        ],
+        [
+          -25.9911,
+          -10.5804
+        ],
+        [
+          -25.9911,
+          -11.1518
+        ],
+        [
+          -25.9911,
+          -11.7232
+        ],
+        [
+          -25.9911,
+          -12.2946
+        ],
+        [
+          -25.9911,
+          -12.8661
+        ],
+        [
+          -25.9911,
+          -13.4375
+        ],
+        [
+          -25.9911,
+          -14.0089
+        ],
+        [
+          -25.9911,
+          -14.5804
+        ],
+        [
+          -25.9911,
+          -15.1518
+        ],
+        [
+          -25.9911,
+          -15.7232
+        ],
+        [
+          -25.9911,
+          -16.2946
+        ],
+        [
+          -25.9911,
+          -16.8661
+        ],
+        [
+          -25.9911,
+          -17.4375
+        ],
+        [
+          -25.9911,
+          -18.0089
+        ],
+        [
+          -25.9911,
+          -18.5804
+        ],
+        [
+          -25.9911,
+          -19.1518
+        ],
+        [
+          -25.9911,
+          -19.7232
+        ],
+        [
+          -25.9911,
+          -20.2946
+        ],
+        [
+          -25.9911,
+          -20.8661
+        ],
+        [
+          -25.9911,
+          -21.4375
+        ],
+        [
+          -25.9911,
+          -22.0089
+        ],
+        [
+          -25.9911,
+          -22.5804
+        ],
+        [
+          -25.9911,
+          -23.1518
+        ],
+        [
+          -25.9911,
+          -23.7232
+        ],
+        [
+          -25.9911,
+          -24.2946
+        ],
+        [
+          -25.9911,
+          -24.8661
+        ],
+        [
+          -25.9911,
+          -25.4375
+        ],
+        [
+          -25.9911,
+          -26.0089
+        ],
+        [
+          -25.9911,
+          -26.5804
+        ],
+        [
+          -25.9911,
+          -27.1518
+        ],
+        [
+          -25.9911,
+          -27.7232
+        ],
+        [
+          -25.9911,
+          -28.2946
+        ],
+        [
+          -25.9911,
+          -28.8661
+        ],
+        [
+          -25.9911,
+          -29.4375
+        ],
+        [
+          -25.9911,
+          -30.0089
+        ],
+        [
+          -25.9911,
+          -30.5804
+        ],
+        [
+          -25.9911,
+          -31.1518
+        ],
+        [
+          -25.9911,
+          -31.7232
+        ],
+        [
+          -25.9911,
+          -32.2946
+        ],
+        [
+          -25.9911,
+          -32.8661
+        ],
+        [
+          -25.9911,
+          -33.4375
+        ],
+        [
+          -25.9911,
+          -34.0089
+        ],
+        [
+          -25.9911,
+          -34.5804
+        ],
+        [
+          -25.9911,
+          -35
+        ]
+      ]
+    ]
+  },
+  "collection": "sentinel-3-synergy-v10-l2-netcdf",
+  "properties": {
+    "s3:gsd": {
+      "OLCI": 300,
+      "SLSTR": {
+        "S1-S6": 500,
+        "S7-S9 and F1-F2": 1000
+      }
+    },
+    "s3:land": 48.668126,
+    "datetime": "2024-03-05T23:59:59.500000Z",
+    "platform": "Sentinel-3A",
+    "instruments": [
+      "OLCI",
+      "SLSTR"
+    ],
+    "end_datetime": "2024-03-10T23:59:59Z",
+    "constellation": "Sentinel-3",
+    "eo:cloud_cover": 1.444476,
+    "s3:snow_or_ice": 0.311017,
+    "start_datetime": "2024-03-01T00:00:00Z",
+    "s3:product_name": "synergy-v10",
+    "s3:product_type": "SY_2_V10___",
+    "sat:orbit_state": "descending",
+    "sat:absolute_orbit": 41553,
+    "sat:relative_orbit": 301,
+    "s3:processing_timeliness": "NT",
+    "sat:platform_international_designator": "2016-011A"
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sentinel-3/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

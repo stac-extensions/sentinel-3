@@ -7,18 +7,17 @@
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal
 - **Owner**: @m-mohr
 
-This document explains the Sentinel-3 Extension to the [SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
+This document explains the Sentinel-3 Extension to the
+[SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
 
 The intention of the first version of the specification is to define the existing behavior of
 the properties prefixed with `s3` as created by the [stactools-sentinel3](https://github.com/stactools-packages/sentinel3) package and used by
 [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/api/stac/v1). Future versions
 will aspire to standardize fields such as the numerous coverage calculations into separate extensions that are not specific to Sentinel-3.
 
-- Examples:
-  - [Item example](examples/item.json): Shows the basic usage of the extension in a STAC Item (todo)
-  - [Collection example](examples/collection.json): Shows the basic usage of the extension in a STAC Collection (todo)
+- [Examples](examples/)
 - [JSON Schema](json-schema/schema.json) (todo)
-- [Changelog](./CHANGELOG.md) (todo)
+- [Changelog](./CHANGELOG.md)
 
 ## Fields
 
@@ -35,6 +34,7 @@ The fields in the table below can be used in these parts of STAC documents:
 | s3:product_type          | string          | One of: `OL_2_WFR___`, `SR_2_WAT___`, `SR_2_LAN___`, `SL_2_FRP___`, `SY_2_V10___`, `OL_2_LFR___`, `SL_2_LST___`, `SY_2_VGP___`, `SL_2_WST___`, `SY_2_SYN___`, `SY_2_AOD___`, `SY_2_VG1___` | all                                                          |
 | s3:product_name          | string          | One of: `olci-wfr`, `sral-wat`, `sral-lan`, `slstr-frp`, `synergy-v10`, `olci-lfr`, `slstr-lst`, `synergy-vgp`, `slstr-wst`, `synergy-syn`, `synergy-aod`, `synergy-vg1` | all                                                          |
 | s3:processing_timeliness | string          | One of: `NT`, ...                                            | all                                                          |
+| s3:gsd                   | see description |                                                              | all                                                          |
 | s3:lrm_mode              | number          |                                                              | sral-wat, sral-lan                                           |
 | s3:sar_mode              | number          |                                                              | sral-wat, sral-lan                                           |
 | s3:bright                | number          |                                                              | olci-wfr                                                     |
@@ -53,10 +53,9 @@ The fields in the table below can be used in these parts of STAC documents:
 | s3:saturated             | number          |                                                              | olci-lfr, olci-wfr, slstr-frp, slstr-lst, slstr-wst          |
 | s3:tidal_region          | number          |                                                              | olci-lfr, olci-wfr, slstr-frp, slstr-lst, synergy-vgp, slstr-wst, synergy-syn |
 | s3:snow_or_ice           | number          | **DEPRECATED** Use eo:snow_cover instead                     | synergy-v10, synergy-vgp, synergy-vg1                        |
-| s3:gsd                   | see description | **DEPRECATED**  | all                                                          |
 
 **s3:gsd**: The data type differs between the products:
-- *integer* used in olci-wfr and olci-lfr
+- *integer* used in olci-wfr and olci-lfr - **DEPRECATED** Use gsd instead.
 - [SRAL GSD Object](#sral-gsd-object) used in sral-wat and sral-lan
 - [Synergy GSD Object](#synergy-gsd-object) for synergy-v10, synergy-syn, synergy-aod, synergy-vg1 and synergy-vgp
 - [SLSTR GSD Object](#slstr-gsd-object) for slstr-lst, slstr-frp and slstr-wst

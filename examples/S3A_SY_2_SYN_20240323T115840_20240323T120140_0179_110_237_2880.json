@@ -1,0 +1,1561 @@
+{
+  "id": "S3A_SY_2_SYN_20240323T115840_20240323T120140_0179_110_237_2880",
+  "bbox": [
+    -39.2308,
+    -2.7175,
+    -25.3241,
+    10.4018
+  ],
+  "type": "Feature",
+  "links": [
+    {
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-synergy-syn-l2-netcdf"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-synergy-syn-l2-netcdf"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-synergy-syn-l2-netcdf/items/S3A_SY_2_SYN_20240323T115840_20240323T120140_0179_110_237_2880"
+    }
+  ],
+  "assets": {
+    "time": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/time.nc",
+      "s3:shape": [
+        4091
+      ],
+      "file:size": 15537,
+      "file:checksum": "a89476ff740060de3e4a303031124dd7",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Time stamps annotation"
+    },
+    "syn-amin": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_AMIN.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 99288,
+      "file:checksum": "5827040b81b704b9046646e3072d71e3",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "L2 Aerosol model index number data"
+    },
+    "syn-flags": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/flags.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 7253975,
+      "file:checksum": "8e239bfce0bbc3dcfc0fe1ed22737288",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Classification and quality Flags associated with OLCI, SLSTR and SYNERGY products"
+    },
+    "syn-ato550": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_AOT550.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 366566,
+      "file:checksum": "7a11bb5b141529a27700490cec78ea2f",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "S1",
+          "description": "Band 1 - Cloud screening, vegetation monitoring, aerosol",
+          "center_wavelength": 0.55427,
+          "full_width_half_max": 0.01926
+        },
+        {
+          "name": "S2",
+          "description": "Band 2 - NDVI, vegetation monitoring, aerosol",
+          "center_wavelength": 0.65947,
+          "full_width_half_max": 0.01925
+        },
+        {
+          "name": "S3",
+          "description": "Band 3 - NDVI, cloud flagging, pixel co-registration",
+          "center_wavelength": 0.868,
+          "full_width_half_max": 0.0206
+        },
+        {
+          "name": "S5",
+          "description": "Band 5 - Cloud clearing, ice, snow, vegetation monitoring",
+          "center_wavelength": 1.6134,
+          "full_width_half_max": 0.06068
+        },
+        {
+          "name": "S6",
+          "description": "Band 6 - Vegetation state and cloud clearing",
+          "center_wavelength": 2.2557,
+          "full_width_half_max": 0.05015
+        },
+        {
+          "name": "Oa01",
+          "description": "Band 1 - Aerosol correction, improved water constituent retrieval",
+          "center_wavelength": 0.4,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa02",
+          "description": "Band 2 - Yellow substance and detrital pigments (turbidity)",
+          "center_wavelength": 0.4125,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa03",
+          "description": "Band 3 - Chlorophyll absorption maximum, biogeochemistry, vegetation",
+          "center_wavelength": 0.4425,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa04",
+          "description": "Band 4 - Chlorophyll",
+          "center_wavelength": 0.49,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa05",
+          "description": "Band 5 - Chlorophyll, sediment, turbidity, red tide",
+          "center_wavelength": 0.51,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa06",
+          "description": "Band 6 - Chlorophyll reference (minimum)",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa07",
+          "description": "Band 7 - Sediment loading",
+          "center_wavelength": 0.62,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa08",
+          "description": "Band 8 - 2nd Chlorophyll absorption maximum, sediment, yellow substance / vegetation",
+          "center_wavelength": 0.665,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa09",
+          "description": "Band 9 - Improved fluorescence retrieval",
+          "center_wavelength": 0.67375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa10",
+          "description": "Band 10 - Chlorophyll fluorescence peak, red edge",
+          "center_wavelength": 0.68125,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa11",
+          "description": "Band 11 - Chlorophyll fluorescence baseline, red edge transition",
+          "center_wavelength": 0.70875,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa12",
+          "description": "Band 12 - O2 absorption / clouds, vegetation",
+          "center_wavelength": 0.75375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa16",
+          "description": "Band 16 - Atmospheric / aerosol correction",
+          "center_wavelength": 0.77875,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa17",
+          "description": "Band 17 - Atmospheric / aerosol correction, clouds, pixel co-registration",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        },
+        {
+          "name": "Oa18",
+          "description": "Band 18 - Water vapour absorption reference. Common reference band with SLSTR. Vegetation monitoring",
+          "center_wavelength": 0.885,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa21",
+          "description": "Band 21 - Water vapour absorption, atmospheric / aerosol correction",
+          "center_wavelength": 1.02,
+          "full_width_half_max": 0.04
+        }
+      ],
+      "description": "Aerosol Optical Thickness Data Set"
+    },
+    "geolocation": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/geolocation.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 48393925,
+      "file:checksum": "c8bb674340452565644c82465329ef61",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "High resolution georeferencing data"
+    },
+    "safe-manifest": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/xfdumanifest.xml",
+      "file:size": 103801,
+      "file:checksum": "50cb897e6c802e4e3862b906b50ba36e",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "SAFE product manifest"
+    },
+    "tiepoints-olci": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/tiepoints_olci.nc",
+      "s3:shape": [
+        315007
+      ],
+      "file:size": 1887202,
+      "file:checksum": "91354b073171c61fb5e427c73cea8478",
+      "s3:spatial_resolution": [
+        300,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Low resolution georeferencing data and Sun and View angles associated with OLCI products"
+    },
+    "tiepoints-meteo": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/tiepoints_meteo.nc",
+      "s3:shape": [
+        315007
+      ],
+      "file:size": 1234743,
+      "file:checksum": "d040bb4cc4211ffa8f435073cde384b6",
+      "s3:spatial_resolution": [
+        300,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "ECMWF meteorology data"
+    },
+    "tiepoints-slstr-n": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/tiepoints_slstr_n.nc",
+      "s3:shape": [
+        5251480
+      ],
+      "file:size": 71679079,
+      "file:checksum": "c331ba67e8ce7165398e79247abe78d0",
+      "s3:spatial_resolution": [
+        300,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Low resolution georeferencing data and Sun and View angles associated with SLSTR nadir view products"
+    },
+    "tiepoints-slstr-o": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/tiepoints_slstr_o.nc",
+      "s3:shape": [
+        5251480
+      ],
+      "file:size": 64482266,
+      "file:checksum": "a4018fc802ee5fbc376784a39ec60e2f",
+      "s3:spatial_resolution": [
+        300,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Low resolution georeferencing data and Sun and View angles associated with SLSTR oblique view products"
+    },
+    "syn-angstrom-exp550": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Angstrom_exp550.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 101792,
+      "file:checksum": "c7e9560cc9b07bd1df4a3921985a0d98",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "S1",
+          "description": "Band 1 - Cloud screening, vegetation monitoring, aerosol",
+          "center_wavelength": 0.55427,
+          "full_width_half_max": 0.01926
+        },
+        {
+          "name": "S2",
+          "description": "Band 2 - NDVI, vegetation monitoring, aerosol",
+          "center_wavelength": 0.65947,
+          "full_width_half_max": 0.01925
+        },
+        {
+          "name": "S3",
+          "description": "Band 3 - NDVI, cloud flagging, pixel co-registration",
+          "center_wavelength": 0.868,
+          "full_width_half_max": 0.0206
+        },
+        {
+          "name": "S5",
+          "description": "Band 5 - Cloud clearing, ice, snow, vegetation monitoring",
+          "center_wavelength": 1.6134,
+          "full_width_half_max": 0.06068
+        },
+        {
+          "name": "S6",
+          "description": "Band 6 - Vegetation state and cloud clearing",
+          "center_wavelength": 2.2557,
+          "full_width_half_max": 0.05015
+        },
+        {
+          "name": "Oa01",
+          "description": "Band 1 - Aerosol correction, improved water constituent retrieval",
+          "center_wavelength": 0.4,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa02",
+          "description": "Band 2 - Yellow substance and detrital pigments (turbidity)",
+          "center_wavelength": 0.4125,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa03",
+          "description": "Band 3 - Chlorophyll absorption maximum, biogeochemistry, vegetation",
+          "center_wavelength": 0.4425,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa04",
+          "description": "Band 4 - Chlorophyll",
+          "center_wavelength": 0.49,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa05",
+          "description": "Band 5 - Chlorophyll, sediment, turbidity, red tide",
+          "center_wavelength": 0.51,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa06",
+          "description": "Band 6 - Chlorophyll reference (minimum)",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa07",
+          "description": "Band 7 - Sediment loading",
+          "center_wavelength": 0.62,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa08",
+          "description": "Band 8 - 2nd Chlorophyll absorption maximum, sediment, yellow substance / vegetation",
+          "center_wavelength": 0.665,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa09",
+          "description": "Band 9 - Improved fluorescence retrieval",
+          "center_wavelength": 0.67375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa10",
+          "description": "Band 10 - Chlorophyll fluorescence peak, red edge",
+          "center_wavelength": 0.68125,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa11",
+          "description": "Band 11 - Chlorophyll fluorescence baseline, red edge transition",
+          "center_wavelength": 0.70875,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa12",
+          "description": "Band 12 - O2 absorption / clouds, vegetation",
+          "center_wavelength": 0.75375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa16",
+          "description": "Band 16 - Atmospheric / aerosol correction",
+          "center_wavelength": 0.77875,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa17",
+          "description": "Band 17 - Atmospheric / aerosol correction, clouds, pixel co-registration",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        },
+        {
+          "name": "Oa18",
+          "description": "Band 18 - Water vapour absorption reference. Common reference band with SLSTR. Vegetation monitoring",
+          "center_wavelength": 0.885,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa21",
+          "description": "Band 21 - Water vapour absorption, atmospheric / aerosol correction",
+          "center_wavelength": 1.02,
+          "full_width_half_max": 0.04
+        }
+      ],
+      "description": "Aerosol Angstrom Exponent Data Set"
+    },
+    "syn-s1n-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_S1N_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368982,
+      "file:checksum": "5599ed59f1626eb07f62104b8a9e1575",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN17",
+          "description": "SLSTR nadir channel S1",
+          "center_wavelength": 0.555,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Surface directional reflectance associated with SLSTR channel 01 acquired in nadir view"
+    },
+    "syn-s1o-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_S1O_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368986,
+      "file:checksum": "88a25c67727c5ee163a9bc38217d209b",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN22",
+          "description": "SLSTR oblique channel S1",
+          "center_wavelength": 0.555,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Surface directional reflectance associated with SLSTR channel 01 acquired in oblique view"
+    },
+    "syn-s2n-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_S2N_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368982,
+      "file:checksum": "115faefe46844773d3dd702d9cdbd015",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN18",
+          "description": "SLSTR nadir channel S2",
+          "center_wavelength": 0.659,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Surface directional reflectance associated with SLSTR channel 02 acquired in nadir view"
+    },
+    "syn-s2o-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_S2O_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368986,
+      "file:checksum": "05c3ed2d0f1309d3cdb1aaa251912b59",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN23",
+          "description": "SLSTR oblique channel S2",
+          "center_wavelength": 0.659,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Surface directional reflectance associated with SLSTR channel 02 acquired in oblique view"
+    },
+    "syn-s3n-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_S3N_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368982,
+      "file:checksum": "be82ffc8203f63ba98b68f1df62e307f",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN19",
+          "description": "SLSTR nadir channel S3",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Surface directional reflectance associated with SLSTR channel 03 acquired in nadir view"
+    },
+    "syn-s3o-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_S3O_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368986,
+      "file:checksum": "ac81db9f1e2b6b2d453ef9b9d3141540",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN24",
+          "description": "SLSTR oblique channel S3",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Surface directional reflectance associated with SLSTR channel 03 acquired in oblique view"
+    },
+    "syn-s5n-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_S5N_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368982,
+      "file:checksum": "1c85f41f4b29b332bd736919c5f5e6f1",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN20",
+          "description": "SLSTR nadir channel S5",
+          "center_wavelength": 1.61,
+          "full_width_half_max": 0.06
+        }
+      ],
+      "description": "Surface directional reflectance associated with SLSTR channel 05 acquired in nadir view"
+    },
+    "syn-s5o-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_S5O_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368986,
+      "file:checksum": "a647302bc0322e930a374128d88f0be8",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN25",
+          "description": "SLSTR oblique channel S5",
+          "center_wavelength": 1.61,
+          "full_width_half_max": 0.06
+        }
+      ],
+      "description": "Surface directional reflectance associated with SLSTR channel 05 acquired in oblique view"
+    },
+    "syn-s6n-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_S6N_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368982,
+      "file:checksum": "997dcfbd30465e9e176a4e56a3169a51",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN21",
+          "description": "SLSTR nadir channel S6",
+          "center_wavelength": 2.25,
+          "full_width_half_max": 0.05
+        }
+      ],
+      "description": "Surface directional reflectance associated with SLSTR channel 06 acquired in nadir view"
+    },
+    "syn-s6o-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_S6O_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368986,
+      "file:checksum": "89f2055cf8a49583c2ae706ae6ee4e8a",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN26",
+          "description": "SLSTR oblique channel S6",
+          "center_wavelength": 2.25,
+          "full_width_half_max": 0.05
+        }
+      ],
+      "description": "Surface directional reflectance associated with SLSTR channel 06 acquired in oblique view"
+    },
+    "syn-oa01-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa01_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "5bbfe284c0605a709d51531e43e8e3d8",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN01",
+          "description": "OLCI channel Oa01",
+          "center_wavelength": 0.4,
+          "full_width_half_max": 0.015
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 01"
+    },
+    "syn-oa02-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa02_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "9e2c4fc5f66b9532b164a10ae1418e35",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN02",
+          "description": "OLCI channel Oa02",
+          "center_wavelength": 0.4125,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 02"
+    },
+    "syn-oa03-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa03_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "e792b43dec6dd83337b30be4263dc268",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN03",
+          "description": "OLCI channel Oa03",
+          "center_wavelength": 0.4425,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 03"
+    },
+    "syn-oa04-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa04_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "8ae0c046a52fa758c8f06dfcda252074",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN04",
+          "description": "OLCI channel Oa04",
+          "center_wavelength": 0.49,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 04"
+    },
+    "syn-oa05-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa05_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "96137e0a41596335f647b87e0bf53554",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN05",
+          "description": "OLCI channel Oa05",
+          "center_wavelength": 0.51,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 05"
+    },
+    "syn-oa06-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa06_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "38457293687bc2513371cef5999b7250",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN06",
+          "description": "OLCI channel Oa06",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 06"
+    },
+    "syn-oa07-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa07_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "4f70ec52dfff289faf51c338054fc205",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN07",
+          "description": "OLCI channel Oa07",
+          "center_wavelength": 0.62,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 07"
+    },
+    "syn-oa08-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa08_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "12f032e8ef1c6f12837ca4874b8116f8",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN08",
+          "description": "OLCI channel Oa08",
+          "center_wavelength": 0.665,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 08"
+    },
+    "syn-oa09-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa09_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "5a1469b14ecdff4b90966f71fb25ce42",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN09",
+          "description": "OLCI channel Oa09",
+          "center_wavelength": 0.67375,
+          "full_width_half_max": 0.0075
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 09"
+    },
+    "syn-oa10-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa10_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "1c104da4e08642a2b9a3e781b7713ec4",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN10",
+          "description": "OLCI channel Oa10",
+          "center_wavelength": 0.68125,
+          "full_width_half_max": 0.0075
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 10"
+    },
+    "syn-oa11-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa11_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "62eecdbc4fa382604c86a20c63f92d96",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN11",
+          "description": "OLCI channel Oa11",
+          "center_wavelength": 0.70875,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 11"
+    },
+    "syn-oa12-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa12_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "ada8b8a7a9ec47c29b1cb6961aa687fd",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN12",
+          "description": "OLCI channel Oa12",
+          "center_wavelength": 0.75375,
+          "full_width_half_max": 0.0075
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 12"
+    },
+    "syn-oa16-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa16_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "46b098ee638f4d02aa73f0c104dae286",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN13",
+          "description": "OLCI channel Oa16",
+          "center_wavelength": 0.7785,
+          "full_width_half_max": 0.015
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 16"
+    },
+    "syn-oa17-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa17_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "7b2cd49fb9974b968f0287c9ae6d9af7",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN14",
+          "description": "OLCI channel Oa17",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 17"
+    },
+    "syn-oa18-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa18_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "7dbc41c7fe6dd359a7477c371409326f",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN15",
+          "description": "OLCI channel Oa18",
+          "center_wavelength": 0.885,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 18"
+    },
+    "syn-oa21-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_Oa21_reflectance.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 368935,
+      "file:checksum": "d7034395ed1a9879cfd9213ddc5e761f",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN16",
+          "description": "OLCI channel Oa21",
+          "center_wavelength": 1.02,
+          "full_width_half_max": 0.04
+        }
+      ],
+      "description": "Surface directional reflectance associated with OLCI channel 21"
+    },
+    "syn-sdr-removed-pixels": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_SDR_removed_pixel.nc",
+      "s3:shape": [
+        4091,
+        142
+      ],
+      "file:size": 606249,
+      "file:checksum": "1e900ec21c886ea673897364c68eff6e",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "S1",
+          "description": "Band 1 - Cloud screening, vegetation monitoring, aerosol",
+          "center_wavelength": 0.55427,
+          "full_width_half_max": 0.01926
+        },
+        {
+          "name": "S2",
+          "description": "Band 2 - NDVI, vegetation monitoring, aerosol",
+          "center_wavelength": 0.65947,
+          "full_width_half_max": 0.01925
+        },
+        {
+          "name": "S3",
+          "description": "Band 3 - NDVI, cloud flagging, pixel co-registration",
+          "center_wavelength": 0.868,
+          "full_width_half_max": 0.0206
+        },
+        {
+          "name": "S4",
+          "description": "Band 4 - Cirrus detection over land",
+          "center_wavelength": 1.3748,
+          "full_width_half_max": 0.0208
+        },
+        {
+          "name": "S6",
+          "description": "Band 6 - Vegetation state and cloud clearing",
+          "center_wavelength": 2.2557,
+          "full_width_half_max": 0.05015
+        },
+        {
+          "name": "Oa01",
+          "description": "Band 1 - Aerosol correction, improved water constituent retrieval",
+          "center_wavelength": 0.4,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa02",
+          "description": "Band 2 - Yellow substance and detrital pigments (turbidity)",
+          "center_wavelength": 0.4125,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa03",
+          "description": "Band 3 - Chlorophyll absorption maximum, biogeochemistry, vegetation",
+          "center_wavelength": 0.4425,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa04",
+          "description": "Band 4 - Chlorophyll",
+          "center_wavelength": 0.49,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa05",
+          "description": "Band 5 - Chlorophyll, sediment, turbidity, red tide",
+          "center_wavelength": 0.51,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa06",
+          "description": "Band 6 - Chlorophyll reference (minimum)",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa07",
+          "description": "Band 7 - Sediment loading",
+          "center_wavelength": 0.62,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa08",
+          "description": "Band 8 - 2nd Chlorophyll absorption maximum, sediment, yellow substance / vegetation",
+          "center_wavelength": 0.665,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa09",
+          "description": "Band 9 - Improved fluorescence retrieval",
+          "center_wavelength": 0.67375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa10",
+          "description": "Band 10 - Chlorophyll fluorescence peak, red edge",
+          "center_wavelength": 0.68125,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa11",
+          "description": "Band 11 - Chlorophyll fluorescence baseline, red edge transition",
+          "center_wavelength": 0.70875,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa12",
+          "description": "Band 12 - O2 absorption / clouds, vegetation",
+          "center_wavelength": 0.75375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa13",
+          "description": "Band 13 - O2 absorption / aerosol correction",
+          "center_wavelength": 0.76125,
+          "full_width_half_max": 0.0025
+        },
+        {
+          "name": "Oa16",
+          "description": "Band 16 - Atmospheric / aerosol correction",
+          "center_wavelength": 0.77875,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa17",
+          "description": "Band 17 - Atmospheric / aerosol correction, clouds, pixel co-registration",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        },
+        {
+          "name": "Oa18",
+          "description": "Band 18 - Water vapour absorption reference. Common reference band with SLSTR. Vegetation monitoring",
+          "center_wavelength": 0.885,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa19",
+          "description": "Band 19 - Water vapour absorption, vegetation monitoring (maximum REFLECTANCE)",
+          "center_wavelength": 0.9,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa21",
+          "description": "Band 21 - Water vapour absorption, atmospheric / aerosol correction",
+          "center_wavelength": 1.02,
+          "full_width_half_max": 0.04
+        }
+      ],
+      "description": "Surface directional reflectance and aerosol parameters associated with removed pixel"
+    },
+    "annotations-removed-pixels": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_SYN___/2024/03/23/S3A_SY_2_SYN____20240323T115840_20240323T120140_20240325T042229_0179_110_237_2880_PS1_O_NT_002.SEN3/Syn_annot_rem.nc",
+      "s3:shape": [
+        4091,
+        142
+      ],
+      "file:size": 331912,
+      "file:checksum": "e068fef658a4c8577cc379ffe6e2ef06",
+      "s3:spatial_resolution": [
+        300,
+        300
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Annotations parameters associated with removed pixel"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -39.2308,
+          -0.1206
+        ],
+        [
+          -38.624,
+          -0.2596
+        ],
+        [
+          -38.0177,
+          -0.3949
+        ],
+        [
+          -37.415,
+          -0.5321
+        ],
+        [
+          -36.8066,
+          -0.6704
+        ],
+        [
+          -36.2003,
+          -0.8082
+        ],
+        [
+          -35.5947,
+          -0.9456
+        ],
+        [
+          -34.9906,
+          -1.0824
+        ],
+        [
+          -34.3833,
+          -1.2202
+        ],
+        [
+          -33.7781,
+          -1.3575
+        ],
+        [
+          -33.1727,
+          -1.4946
+        ],
+        [
+          -32.5656,
+          -1.6321
+        ],
+        [
+          -31.9601,
+          -1.7689
+        ],
+        [
+          -31.3546,
+          -1.9054
+        ],
+        [
+          -30.7483,
+          -2.0415
+        ],
+        [
+          -30.1404,
+          -2.1777
+        ],
+        [
+          -29.5354,
+          -2.3118
+        ],
+        [
+          -28.9286,
+          -2.4472
+        ],
+        [
+          -28.3222,
+          -2.5822
+        ],
+        [
+          -27.7143,
+          -2.7175
+        ],
+        [
+          -27.1298,
+          -0.0645
+        ],
+        [
+          -26.5365,
+          2.5905
+        ],
+        [
+          -25.9359,
+          5.2481
+        ],
+        [
+          -25.3241,
+          7.9021
+        ],
+        [
+          -25.9338,
+          8.0427
+        ],
+        [
+          -26.5467,
+          8.1827
+        ],
+        [
+          -27.1578,
+          8.3212
+        ],
+        [
+          -27.7699,
+          8.4578
+        ],
+        [
+          -28.383,
+          8.5948
+        ],
+        [
+          -28.995,
+          8.7304
+        ],
+        [
+          -29.6093,
+          8.8658
+        ],
+        [
+          -30.2218,
+          8.9998
+        ],
+        [
+          -30.8364,
+          9.1332
+        ],
+        [
+          -31.453,
+          9.2658
+        ],
+        [
+          -32.0671,
+          9.3966
+        ],
+        [
+          -32.6838,
+          9.5268
+        ],
+        [
+          -33.2979,
+          9.6548
+        ],
+        [
+          -33.9143,
+          9.7823
+        ],
+        [
+          -34.5318,
+          9.9089
+        ],
+        [
+          -35.1521,
+          10.0349
+        ],
+        [
+          -35.7677,
+          10.1559
+        ],
+        [
+          -36.3863,
+          10.2791
+        ],
+        [
+          -37.0063,
+          10.4018
+        ],
+        [
+          -37.54,
+          7.7689
+        ],
+        [
+          -38.0869,
+          5.1355
+        ],
+        [
+          -38.6514,
+          2.5049
+        ],
+        [
+          -39.2308,
+          -0.1206
+        ]
+      ]
+    ]
+  },
+  "collection": "sentinel-3-synergy-syn-l2-netcdf",
+  "properties": {
+    "s3:gsd": {
+      "OLCI": 300,
+      "SLSTR": {
+        "S1-S6": 500,
+        "S7-S9 and F1-F2": 1000
+      }
+    },
+    "s3:land": 0,
+    "datetime": "2024-03-23T12:00:10.313674Z",
+    "platform": "Sentinel-3A",
+    "s3:coastal": 0,
+    "instruments": [
+      "OLCI",
+      "SLSTR"
+    ],
+    "end_datetime": "2024-03-23T12:01:40.313674Z",
+    "constellation": "Sentinel-3",
+    "eo:cloud_cover": 63.724693,
+    "start_datetime": "2024-03-23T11:58:40.313674Z",
+    "s3:product_name": "synergy-syn",
+    "s3:product_type": "SY_2_SYN___",
+    "s3:saline_water": 95.785364,
+    "s3:tidal_region": 0,
+    "sat:orbit_state": "descending",
+    "sat:absolute_orbit": 42175,
+    "sat:relative_orbit": 237,
+    "s3:fresh_inland_water": 0,
+    "s3:processing_timeliness": "NT",
+    "sat:platform_international_designator": "2016-011A"
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sentinel-3/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

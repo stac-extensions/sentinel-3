@@ -1,0 +1,652 @@
+{
+  "id": "S3B_SL_2_FRP_20240324T111129_20240324T111429_0179_091_108_3960",
+  "bbox": [
+    -54.183,
+    -66.2193,
+    -22.4092,
+    -51.2447
+  ],
+  "type": "Feature",
+  "links": [
+    {
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-slstr-frp-l2-netcdf"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-slstr-frp-l2-netcdf"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-slstr-frp-l2-netcdf/items/S3B_SL_2_FRP_20240324T111129_20240324T111429_0179_091_108_3960"
+    }
+  ],
+  "assets": {
+    "frp-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/FRP_in.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 380013,
+      "file:checksum": "c1cd0d8fb6f14f546e6f4b62bae76ad3",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "S5",
+          "description": "Band 5 - Cloud clearing, ice, snow, vegetation monitoring",
+          "center_wavelength": 1.6134,
+          "full_width_half_max": 0.06068
+        },
+        {
+          "name": "S6",
+          "description": "Band 6 - Vegetation state and cloud clearing",
+          "center_wavelength": 2.2557,
+          "full_width_half_max": 0.05015
+        },
+        {
+          "name": "S7",
+          "description": "Band 7 - SST, LST, Active fire",
+          "center_wavelength": 3.742,
+          "full_width_half_max": 0.398
+        },
+        {
+          "name": "F1",
+          "description": "Band 10 - Active fire",
+          "center_wavelength": 3.742,
+          "full_width_half_max": 0.398
+        }
+      ],
+      "description": "Fire Radiative Power (FRP) dataset"
+    },
+    "slstr-met-tx": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/met_tx.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 34561559,
+      "file:checksum": "b3d15402f2c70bdf98c44328a4118a00",
+      "s3:spatial_resolution": [
+        1000,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Meteorological parameters regridded onto the 16km tie points"
+    },
+    "safe-manifest": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/xfdumanifest.xml",
+      "file:size": 119655,
+      "file:checksum": "a4aa4c82e7bca1fa56225c11aa8b4517",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "SAFE product manifest"
+    },
+    "slstr-time-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/time_in.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 64363,
+      "file:checksum": "b07aaef6d2a67933ba3d376a2ce5c93e",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Time annotations for the 1 KM grid"
+    },
+    "slstr-flags-fn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/flags_fn.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 1057768,
+      "file:checksum": "2b1392ae24612aee733d2f0e3a9ac76d",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Global flags for the 1km F1 grid, nadir view"
+    },
+    "slstr-flags-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/flags_in.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 1107851,
+      "file:checksum": "9525abe276758b458a559e516ceba1d6",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Global flags for the 1km TIR grid, nadir view"
+    },
+    "slstr-indices-fn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/indices_fn.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 893018,
+      "file:checksum": "070f4d3c520247c6c97818c20ba10392",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Scan, pixel and detector annotations for the 1km F1 grid, nadir view"
+    },
+    "slstr-indices-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/indices_in.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 911370,
+      "file:checksum": "ef1a6cb850e50ed3050fc1e67cc3749e",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Scan, pixel and detector annotations for the 1km TIR grid, nadir view"
+    },
+    "slstr-geodetic-fn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/geodetic_fn.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 7679757,
+      "file:checksum": "0aa9dc747521c04747775778240f21db",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Full resolution geodetic coordinates for the 1km F1 grid, nadir view"
+    },
+    "slstr-geodetic-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/geodetic_in.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 7747645,
+      "file:checksum": "5cfead1ccffa7c3ceb97c0ab3fb3dcff",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Full resolution geodetic coordinates for the 1km TIR grid, nadir view"
+    },
+    "slstr-geodetic-tx": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/geodetic_tx.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 1746836,
+      "file:checksum": "490bc244761c2249da5564f9602b209e",
+      "s3:spatial_resolution": [
+        1000,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "16km geodetic coordinates"
+    },
+    "slstr-geometry-tn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/geometry_tn.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 3548656,
+      "file:checksum": "73fb780e0cc68b74cb96c8e4d0b1d93c",
+      "s3:spatial_resolution": [
+        1000,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "16km solar and satellite geometry annotations, nadir view"
+    },
+    "slstr-cartesian-fn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/cartesian_fn.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 4706141,
+      "file:checksum": "b2225b64a05658731cb21a9127c6b6f7",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Full resolution cartesian coordinates for the 1km F1 grid, nadir view"
+    },
+    "slstr-cartesian-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/cartesian_in.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 4740953,
+      "file:checksum": "783031420d5f8e0b78d81643fac84790",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Full resolution cartesian coordinates for the 1km TIR grid, nadir view"
+    },
+    "slstr-cartesian-tx": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/03/24/S3B_SL_2_FRP____20240324T111129_20240324T111429_20240325T115823_0179_091_108_3960_PS2_O_NT_004.SEN3/cartesian_tx.nc",
+      "s3:shape": [
+        1200,
+        1500
+      ],
+      "file:size": 41764,
+      "file:checksum": "91e9c8f87b40b23673a08144f93b4aa1",
+      "s3:spatial_resolution": [
+        1000,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "16km cartesian coordinates"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -54.183,
+          -60.3857
+        ],
+        [
+          -53.4268,
+          -60.6575
+        ],
+        [
+          -52.6972,
+          -60.9368
+        ],
+        [
+          -51.9143,
+          -61.1925
+        ],
+        [
+          -51.142,
+          -61.4646
+        ],
+        [
+          -50.3519,
+          -61.7214
+        ],
+        [
+          -49.5464,
+          -61.9753
+        ],
+        [
+          -48.7209,
+          -62.2121
+        ],
+        [
+          -47.8787,
+          -62.4616
+        ],
+        [
+          -47.0343,
+          -62.7056
+        ],
+        [
+          -46.169,
+          -62.9279
+        ],
+        [
+          -45.2916,
+          -63.1648
+        ],
+        [
+          -44.4121,
+          -63.3811
+        ],
+        [
+          -43.5159,
+          -63.5981
+        ],
+        [
+          -42.5873,
+          -63.8089
+        ],
+        [
+          -41.6507,
+          -64.0124
+        ],
+        [
+          -40.7245,
+          -64.2155
+        ],
+        [
+          -39.7752,
+          -64.4057
+        ],
+        [
+          -38.796,
+          -64.5858
+        ],
+        [
+          -37.8005,
+          -64.7698
+        ],
+        [
+          -36.8142,
+          -64.9435
+        ],
+        [
+          -35.8147,
+          -65.112
+        ],
+        [
+          -34.7875,
+          -65.2661
+        ],
+        [
+          -33.7464,
+          -65.4233
+        ],
+        [
+          -32.7119,
+          -65.5632
+        ],
+        [
+          -31.657,
+          -65.7067
+        ],
+        [
+          -30.575,
+          -65.8335
+        ],
+        [
+          -29.5063,
+          -65.9551
+        ],
+        [
+          -28.4255,
+          -66.0711
+        ],
+        [
+          -27.3146,
+          -66.1787
+        ],
+        [
+          -26.9148,
+          -66.2193
+        ],
+        [
+          -25.5669,
+          -63.6653
+        ],
+        [
+          -24.3919,
+          -61.0585
+        ],
+        [
+          -23.3486,
+          -58.4453
+        ],
+        [
+          -22.4092,
+          -55.8356
+        ],
+        [
+          -22.4219,
+          -55.8252
+        ],
+        [
+          -22.7277,
+          -55.7935
+        ],
+        [
+          -23.5097,
+          -55.6992
+        ],
+        [
+          -24.3145,
+          -55.6046
+        ],
+        [
+          -25.0929,
+          -55.5043
+        ],
+        [
+          -25.8777,
+          -55.3925
+        ],
+        [
+          -26.6603,
+          -55.285
+        ],
+        [
+          -27.4355,
+          -55.1643
+        ],
+        [
+          -28.1986,
+          -55.0486
+        ],
+        [
+          -28.976,
+          -54.9179
+        ],
+        [
+          -29.7285,
+          -54.7851
+        ],
+        [
+          -30.494,
+          -54.6541
+        ],
+        [
+          -31.2366,
+          -54.5135
+        ],
+        [
+          -31.9795,
+          -54.3678
+        ],
+        [
+          -32.7275,
+          -54.2146
+        ],
+        [
+          -33.4518,
+          -54.0649
+        ],
+        [
+          -34.1836,
+          -53.9081
+        ],
+        [
+          -34.9109,
+          -53.7361
+        ],
+        [
+          -35.6226,
+          -53.568
+        ],
+        [
+          -36.3414,
+          -53.4034
+        ],
+        [
+          -37.0496,
+          -53.2178
+        ],
+        [
+          -37.7492,
+          -53.0478
+        ],
+        [
+          -38.4408,
+          -52.857
+        ],
+        [
+          -39.122,
+          -52.6755
+        ],
+        [
+          -39.8178,
+          -52.4804
+        ],
+        [
+          -40.492,
+          -52.2821
+        ],
+        [
+          -41.158,
+          -52.0814
+        ],
+        [
+          -41.8303,
+          -51.8816
+        ],
+        [
+          -42.4836,
+          -51.668
+        ],
+        [
+          -43.1309,
+          -51.4605
+        ],
+        [
+          -43.7835,
+          -51.2447
+        ],
+        [
+          -43.7904,
+          -51.2527
+        ],
+        [
+          -45.9485,
+          -53.6199
+        ],
+        [
+          -48.377,
+          -55.9482
+        ],
+        [
+          -51.1197,
+          -58.2198
+        ],
+        [
+          -54.183,
+          -60.3857
+        ]
+      ]
+    ]
+  },
+  "collection": "sentinel-3-slstr-frp-l2-netcdf",
+  "properties": {
+    "s3:gsd": {
+      "S1-S6": 500,
+      "S7-S9 and F1-F2": 1000
+    },
+    "s3:land": 0.213167,
+    "datetime": "2024-03-24T11:12:58.634586Z",
+    "platform": "Sentinel-3B",
+    "s3:coastal": 0.019944,
+    "instruments": [
+      "SLSTR"
+    ],
+    "s3:cosmetic": 22.983167,
+    "end_datetime": "2024-03-24T11:14:28.634586Z",
+    "s3:saturated": 0.000167,
+    "constellation": "Sentinel-3",
+    "s3:duplicated": 4.702556,
+    "eo:cloud_cover": 90.571833,
+    "start_datetime": "2024-03-24T11:11:28.634586Z",
+    "s3:out_of_range": 2.012,
+    "s3:product_name": "slstr-frp",
+    "s3:product_type": "SL_2_FRP___",
+    "s3:saline_water": 99.786833,
+    "s3:tidal_region": 0,
+    "sat:orbit_state": "descending",
+    "sat:absolute_orbit": 30795,
+    "sat:relative_orbit": 108,
+    "s3:fresh_inland_water": 0.001333,
+    "s3:processing_timeliness": "NT",
+    "sat:platform_international_designator": "2018-039A"
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sentinel-3/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

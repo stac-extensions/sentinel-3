@@ -16,4 +16,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-[Unreleased]: <https://github.com/stac-extensions/template/compare/v1.0.0...HEAD>
+## [1.0.0]
+
+### Added
+
+- Create an initial definition of the extension.
+
+[Unreleased]: <https://github.com/stac-extensions/sentinel-3/compare/v1.0.0...HEAD>
+[1.0.0]: <https://github.com/stac-extensions/sentinel-3/tags/v1.0.0>
