@@ -10,10 +10,14 @@
 This document explains the Sentinel-3 Extension to the
 [SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
 
-The intention of the first version of the specification is to define the existing behavior of
-the properties prefixed with `s3` as created by the [stactools-sentinel3](https://github.com/stactools-packages/sentinel3) package and used by
-[Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/api/stac/v1). Future versions
-will aspire to standardize fields such as the numerous coverage calculations into separate extensions that are not specific to Sentinel-3.
+> \[!CAUTION]
+> The intention of the first version of the specification was to reflect the existing behavior of the properties
+> prefixed with `s3` as implemented by the [stactools-sentinel3](https://github.com/stactools-packages/sentinel3) package.
+> The following version deprecated most of the fields in favor of other extensions that are not specific to Sentinel-3.
+> The remaining fields are for statistical purposes.
+> If you want to expose the statistal fields, this extension is currently the best approach until a
+> generic approach for STAC has been defined.
+> For all other fields the recommended alternatives should be preferred.
 
 - [Examples](examples/)
 - [JSON Schema](json-schema/schema.json) (todo)
