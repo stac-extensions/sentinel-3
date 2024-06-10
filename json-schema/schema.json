@@ -70,12 +70,6 @@
     "require_any": {
       "$comment": "Please list all fields here so that we can force the existence of one of them in other parts of the schemas.",
       "anyOf": [
-        {"required": ["s3:product_type"]},
-        {"required": ["s3:product_name"]},
-        {"required": ["s3:processing_timeliness"]},
-        {"required": ["s3:gsd"]},
-        {"required": ["s3:lrm_mode"]},
-        {"required": ["s3:sar_mode"]},
         {"required": ["s3:bright"]},
         {"required": ["s3:closed_sea"]},
         {"required": ["s3:coastal"]},

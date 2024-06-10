@@ -32,7 +32,7 @@
   "assets": {
     "ag": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/ag.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         799
       ],
@@ -50,7 +50,7 @@
     },
     "b0": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/B0.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         12785
       ],
@@ -76,7 +76,7 @@
     },
     "b2": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/B2.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         12785
       ],
@@ -102,7 +102,7 @@
     },
     "b3": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/B3.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         12785
       ],
@@ -128,7 +128,7 @@
     },
     "og": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/og.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         799
       ],
@@ -146,7 +146,7 @@
     },
     "sm": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/sm.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         12785
       ],
@@ -164,7 +164,7 @@
     },
     "mir": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/MIR.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         12785
       ],
@@ -190,7 +190,7 @@
     },
     "saa": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/saa.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         799
       ],
@@ -208,7 +208,7 @@
     },
     "sza": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/sza.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         799
       ],
@@ -226,7 +226,7 @@
     },
     "vaa": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/vaa.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         799
       ],
@@ -244,7 +244,7 @@
     },
     "vza": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/vza.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         799
       ],
@@ -262,7 +262,7 @@
     },
     "wvg": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_VGP___/2024/03/16/S3A_SY_2_VGP____20240316T061625_20240316T070022_20240317T222437_2637_110_134______PS1_O_NT_002.SEN3/wvg.nc",
-      "s3:shape": [
+      "proj:shape": [
         14672,
         799
       ],
@@ -1654,13 +1654,7 @@
   },
   "collection": "sentinel-3-synergy-vgp-l2-netcdf",
   "properties": {
-    "s3:gsd": {
-      "OLCI": 300,
-      "SLSTR": {
-        "S1-S6": 500,
-        "S7-S9 and F1-F2": 1000
-      }
-    },
+    "gsd": 300,
     "s3:land": 43.592731,
     "datetime": "2024-03-16T06:38:23.447613Z",
     "platform": "Sentinel-3A",
@@ -1672,24 +1666,26 @@
     "end_datetime": "2024-03-16T07:00:22.208977Z",
     "constellation": "Sentinel-3",
     "eo:cloud_cover": 3.69469,
-    "s3:snow_or_ice": 1.512649,
+    "eo:snow_cover": 1.512649,
     "start_datetime": "2024-03-16T06:16:24.686249Z",
-    "s3:product_name": "synergy-vgp",
-    "s3:product_type": "SY_2_VGP___",
+    "product:type": "SY_2_VGP___",
     "s3:saline_water": 56.385669,
     "s3:tidal_region": 0.500786,
     "sat:orbit_state": "descending",
     "sat:absolute_orbit": 42072,
     "sat:relative_orbit": 134,
     "s3:fresh_inland_water": 1.719255,
-    "s3:processing_timeliness": "NT",
+    "product:timeliness": "P1M",
+    "product:timeliness_category": "NT",
     "sat:platform_international_designator": "2016-011A"
   },
   "stac_extensions": [
     "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
     "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json"
+    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/product/v0.1.0/schema.json"
   ],
   "stac_version": "1.0.0"
 }

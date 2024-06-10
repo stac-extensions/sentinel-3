@@ -32,7 +32,7 @@
   "assets": {
     "ag": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/ag.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -50,7 +50,7 @@
     },
     "b0": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/B0.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -76,7 +76,7 @@
     },
     "b2": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/B2.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -102,7 +102,7 @@
     },
     "b3": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/B3.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -128,7 +128,7 @@
     },
     "og": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/og.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -146,7 +146,7 @@
     },
     "sm": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/sm.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -164,7 +164,7 @@
     },
     "tg": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/tg.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -182,7 +182,7 @@
     },
     "mir": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/MIR.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -208,7 +208,7 @@
     },
     "saa": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/saa.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -226,7 +226,7 @@
     },
     "sza": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/sza.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -244,7 +244,7 @@
     },
     "vaa": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/vaa.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -262,7 +262,7 @@
     },
     "vza": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/vza.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -280,7 +280,7 @@
     },
     "wvg": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/wvg.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -298,7 +298,7 @@
     },
     "ndvi": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/03/01/S3A_SY_2_V10____20240301T000000_20240310T235959_20240312T231235_AFRICA____________PS1_O_NT_002.SEN3/NDVI.nc",
-      "s3:shape": [
+      "proj:shape": [
         8176,
         9632
       ],
@@ -1528,13 +1528,7 @@
   },
   "collection": "sentinel-3-synergy-v10-l2-netcdf",
   "properties": {
-    "s3:gsd": {
-      "OLCI": 300,
-      "SLSTR": {
-        "S1-S6": 500,
-        "S7-S9 and F1-F2": 1000
-      }
-    },
+    "gsd": 300,
     "s3:land": 48.668126,
     "datetime": "2024-03-05T23:59:59.500000Z",
     "platform": "Sentinel-3A",
@@ -1545,21 +1539,23 @@
     "end_datetime": "2024-03-10T23:59:59Z",
     "constellation": "Sentinel-3",
     "eo:cloud_cover": 1.444476,
-    "s3:snow_or_ice": 0.311017,
+    "eo:snow_cover": 0.311017,
     "start_datetime": "2024-03-01T00:00:00Z",
-    "s3:product_name": "synergy-v10",
-    "s3:product_type": "SY_2_V10___",
+    "product:type": "SY_2_V10___",
     "sat:orbit_state": "descending",
     "sat:absolute_orbit": 41553,
     "sat:relative_orbit": 301,
-    "s3:processing_timeliness": "NT",
+    "product:timeliness": "P1M",
+    "product:timeliness_category": "NT",
     "sat:platform_international_designator": "2016-011A"
   },
   "stac_extensions": [
     "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
     "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json"
+    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/product/v0.1.0/schema.json"
   ],
   "stac_version": "1.0.0"
 }

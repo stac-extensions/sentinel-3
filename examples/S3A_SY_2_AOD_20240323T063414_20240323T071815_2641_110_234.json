@@ -32,7 +32,7 @@
   "assets": {
     "ntc-aod": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_AOD___/2024/03/23/S3A_SY_2_AOD____20240323T063414_20240323T071815_20240324T230216_2641_110_234______PS1_O_NT_002.SEN3/NTC_AOD.nc",
-      "s3:shape": [
+      "proj:shape": [
         4002,
         324
       ],
@@ -1470,13 +1470,7 @@
   },
   "collection": "sentinel-3-synergy-aod-l2-netcdf",
   "properties": {
-    "s3:gsd": {
-      "OLCI": 300,
-      "SLSTR": {
-        "S1-S6": 500,
-        "S7-S9 and F1-F2": 1000
-      }
-    },
+    "gsd": 300,
     "s3:land": 48.840512,
     "datetime": "2024-03-23T06:56:14.510378Z",
     "platform": "Sentinel-3A",
@@ -1488,20 +1482,22 @@
     "constellation": "Sentinel-3",
     "eo:cloud_cover": 68.98007,
     "start_datetime": "2024-03-23T06:34:13.702980Z",
-    "s3:product_name": "synergy-aod",
-    "s3:product_type": "SY_2_AOD___",
+    "product:type": "SY_2_AOD___",
     "s3:saline_water": 51.133094,
     "sat:orbit_state": "descending",
     "sat:absolute_orbit": 42172,
     "sat:relative_orbit": 234,
-    "s3:processing_timeliness": "NT",
+    "product:timeliness": "P1M",
+    "product:timeliness_category": "NT",
     "sat:platform_international_designator": "2016-011A"
   },
   "stac_extensions": [
     "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
     "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json"
+    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/product/v0.1.0/schema.json"
   ],
   "stac_version": "1.0.0"
 }

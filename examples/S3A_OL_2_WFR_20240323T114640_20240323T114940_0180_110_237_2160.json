@@ -32,7 +32,7 @@
   "assets": {
     "iwv": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/iwv.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -64,7 +64,7 @@
     },
     "par": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/par.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -82,7 +82,7 @@
     },
     "trsp": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/trsp.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -114,7 +114,7 @@
     },
     "wqsf": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/wqsf.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -132,7 +132,7 @@
     },
     "w-aer": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/w_aer.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -170,7 +170,7 @@
     },
     "chl-nn": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/chl_nn.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -286,7 +286,7 @@
     },
     "iop-nn": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/iop_nn.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -336,7 +336,7 @@
     },
     "tsm-nn": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/tsm_nn.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -452,7 +452,7 @@
     },
     "chl-oc4me": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/chl_oc4me.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -496,7 +496,7 @@
     },
     "tie-meteo": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/tie_meteo.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -544,7 +544,7 @@
     },
     "tie-geometries": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/tie_geometries.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -562,7 +562,7 @@
     },
     "geo-coordinates": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/geo_coordinates.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -580,7 +580,7 @@
     },
     "instrument-data": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/instrument_data.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -598,7 +598,7 @@
     },
     "oa01-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa01_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -624,7 +624,7 @@
     },
     "oa02-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa02_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -650,7 +650,7 @@
     },
     "oa03-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa03_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -676,7 +676,7 @@
     },
     "oa04-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa04_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -702,7 +702,7 @@
     },
     "oa05-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa05_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -728,7 +728,7 @@
     },
     "oa06-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa06_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -754,7 +754,7 @@
     },
     "oa07-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa07_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -780,7 +780,7 @@
     },
     "oa08-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa08_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -806,7 +806,7 @@
     },
     "oa09-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa09_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -832,7 +832,7 @@
     },
     "oa10-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa10_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -858,7 +858,7 @@
     },
     "oa11-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa11_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -884,7 +884,7 @@
     },
     "oa12-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa12_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -910,7 +910,7 @@
     },
     "oa16-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa16_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -936,7 +936,7 @@
     },
     "oa17-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa17_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -962,7 +962,7 @@
     },
     "oa18-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa18_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -988,7 +988,7 @@
     },
     "oa21-reflectance": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/Oa21_reflectance.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -1014,7 +1014,7 @@
     },
     "time-coordinates": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/time_coordinates.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -1032,7 +1032,7 @@
     },
     "tie-geo-coordinates": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/03/23/S3A_OL_2_WFR____20240323T114640_20240323T114940_20240324T191105_0180_110_237_2160_MAR_O_NT_003.SEN3/tie_geo_coordinates.nc",
-      "s3:shape": [
+      "proj:shape": [
         4091,
         4865
       ],
@@ -1246,7 +1246,7 @@
   },
   "collection": "sentinel-3-olci-wfr-l2-netcdf",
   "properties": {
-    "s3:gsd": 300,
+    "gsd": 300,
     "s3:land": 0,
     "datetime": "2024-03-23T11:48:10.313674Z",
     "platform": "Sentinel-3A",
@@ -1262,8 +1262,7 @@
     "s3:duplicated": 1.576341,
     "eo:cloud_cover": 77,
     "start_datetime": "2024-03-23T11:46:40.313674Z",
-    "s3:product_name": "olci-wfr",
-    "s3:product_type": "OL_2_WFR___",
+    "product:type": "OL_2_WFR___",
     "s3:saline_water": 19,
     "s3:tidal_region": 0,
     "sat:orbit_state": "descending",
@@ -1271,14 +1270,17 @@
     "sat:absolute_orbit": 42175,
     "sat:relative_orbit": 237,
     "s3:fresh_inland_water": 0,
-    "s3:processing_timeliness": "NT",
+    "product:timeliness": "P1M",
+    "product:timeliness_category": "NT",
     "sat:platform_international_designator": "2016-011A"
   },
   "stac_extensions": [
     "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
     "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json"
+    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/product/v0.1.0/schema.json"
   ],
   "stac_version": "1.0.0"
 }

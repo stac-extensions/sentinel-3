@@ -860,10 +860,7 @@
   },
   "collection": "sentinel-3-sral-wat-l2-netcdf",
   "properties": {
-    "s3:gsd": {
-      "along-track": 300,
-      "across-track": 1640
-    },
+    "gsd": 300,
     "s3:land": 6,
     "datetime": "2024-02-06T01:44:32.418817Z",
     "platform": "Sentinel-3A",
@@ -877,19 +874,20 @@
     "s3:closed_sea": 0,
     "s3:open_ocean": 94,
     "start_datetime": "2024-02-06T01:22:28.520861Z",
-    "s3:product_name": "sral-wat",
-    "s3:product_type": "SR_2_WAT___",
+    "product:type": "SR_2_WAT___",
     "sat:orbit_state": "descending",
     "s3:continental_ice": 0,
     "sat:absolute_orbit": 41513,
     "sat:relative_orbit": 345,
-    "s3:processing_timeliness": "NT",
+    "product:timeliness": "P1M",
+    "product:timeliness_category": "NT",
     "sat:platform_international_designator": "2016-011A"
   },
   "stac_extensions": [
     "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json"
+    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json",
+    "https://stac-extensions.github.io/product/v0.1.0/schema.json"
   ],
   "stac_version": "1.0.0"
 }

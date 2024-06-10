@@ -32,7 +32,7 @@
   "assets": {
     "lst-in": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/LST_in.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -64,7 +64,7 @@
     },
     "slstr-met-tx": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/met_tx.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -92,7 +92,7 @@
     },
     "slstr-time-in": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/time_in.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -110,7 +110,7 @@
     },
     "slstr-flags-in": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/flags_in.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -128,7 +128,7 @@
     },
     "lst-ancillary-ds": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/LST_ancillary_ds.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -146,7 +146,7 @@
     },
     "slstr-indices-in": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/indices_in.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -164,7 +164,7 @@
     },
     "slstr-geodetic-in": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/geodetic_in.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -182,7 +182,7 @@
     },
     "slstr-geodetic-tx": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/geodetic_tx.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -200,7 +200,7 @@
     },
     "slstr-geometry-tn": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/geometry_tn.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -218,7 +218,7 @@
     },
     "slstr-cartesian-in": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/cartesian_in.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -236,7 +236,7 @@
     },
     "slstr-cartesian-tx": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_LST___/2024/03/24/S3B_SL_2_LST____20240324T101429_20240324T101729_20240325T115213_0179_091_108_0540_PS2_O_NT_004.SEN3/cartesian_tx.nc",
-      "s3:shape": [
+      "proj:shape": [
         1200,
         1500
       ],
@@ -572,10 +572,7 @@
   },
   "collection": "sentinel-3-slstr-lst-l2-netcdf",
   "properties": {
-    "s3:gsd": {
-      "S1-S6": 500,
-      "S7-S9 and F1-F2": 1000
-    },
+    "gsd": 1000,
     "s3:land": 0,
     "datetime": "2024-03-24T10:15:58.634586Z",
     "platform": "Sentinel-3B",
@@ -591,22 +588,24 @@
     "eo:cloud_cover": 0,
     "start_datetime": "2024-03-24T10:14:28.634586Z",
     "s3:out_of_range": 0,
-    "s3:product_name": "slstr-lst",
-    "s3:product_type": "SL_2_LST___",
+    "product:type": "SL_2_LST___",
     "s3:saline_water": 100,
     "s3:tidal_region": 0,
     "sat:orbit_state": "ascending",
     "sat:absolute_orbit": 30795,
     "sat:relative_orbit": 108,
     "s3:fresh_inland_water": 0,
-    "s3:processing_timeliness": "NT",
+    "product:timeliness": "P1M",
+    "product:timeliness_category": "NT",
     "sat:platform_international_designator": "2018-039A"
   },
   "stac_extensions": [
     "https://stac-extensions.github.io/file/v2.1.0/schema.json",
     "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
     "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json"
+    "https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/product/v0.1.0/schema.json"
   ],
   "stac_version": "1.0.0"
 }

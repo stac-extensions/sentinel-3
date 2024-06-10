@@ -29,80 +29,27 @@ The fields in the table below can be used in these parts of STAC documents:
 - [ ] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
 - [ ] Links
 
-| Field Name               | Type            | Description                                                  | Applies to                                                   |
-| ------------------------ | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| s3:product_type          | string          | One of: `OL_2_WFR___`, `SR_2_WAT___`, `SR_2_LAN___`, `SL_2_FRP___`, `SY_2_V10___`, `OL_2_LFR___`, `SL_2_LST___`, `SY_2_VGP___`, `SL_2_WST___`, `SY_2_SYN___`, `SY_2_AOD___`, `SY_2_VG1___` | all                                                          |
-| s3:product_name          | string          | One of: `olci-wfr`, `sral-wat`, `sral-lan`, `slstr-frp`, `synergy-v10`, `olci-lfr`, `slstr-lst`, `synergy-vgp`, `slstr-wst`, `synergy-syn`, `synergy-aod`, `synergy-vg1` | all                                                          |
-| s3:processing_timeliness | string          | One of: `NT`, ...                                            | all                                                          |
-| s3:gsd                   | see description |                                                              | all                                                          |
-| s3:lrm_mode              | number          |                                                              | sral-wat, sral-lan                                           |
-| s3:sar_mode              | number          |                                                              | sral-wat, sral-lan                                           |
-| s3:bright                | number          |                                                              | olci-wfr                                                     |
-| s3:closed_sea            | number          |                                                              | sral-wat, sral-lan                                           |
-| s3:coastal               | number          |                                                              | olci-lfr, olci-wfr, slstr-frp, slstr-lst, synergy-vgp, slstr-wst, synergy-syn |
-| s3:continental_ice       | number          |                                                              | sral-wat, sral-lan                                           |
-| s3:cosmetic              | number          |                                                              | olci-lfr, olci-wfr, slstr-frp, slstr-lst, slstr-wst          |
-| s3:dubious_samples       | number          |                                                              | olci-lfr, olci-wfr                                           |
-| s3:duplicated            | number          |                                                              | olci-lfr, olci-wfr, slstr-frp, slstr-lst, slstr-wst          |
-| s3:fresh_inland_water    | number          |                                                              | olci-lfr, olci-wfr, slstr-frp, slstr-lst, synergy-vgp, slstr-wst, synergy-syn |
-| s3:invalid               | number          |                                                              | olci-lfr, olci-wfr                                           |
-| s3:land                  | number          |                                                              | olci-lfr, olci-wfr, sral-wat, sral-lan, slstr-frp, synergy-v10, slstr-lst, synergy-vgp, slstr-wst, synergy-syn, synergy-aod, synergy-vg1 |
-| s3:open_ocean            | number          |                                                              | sral-wat, sral-lan                                           |
-| s3:out_of_range          | number          |                                                              | slstr-lst, slstr-wst                                         |
-| s3:saline_water          | number          |                                                              | olci-lfr, olci-wfr, slstr-frp, slstr-lst, synergy-vgp, slstr-wst, synergy-syn, synergy-aod |
-| s3:saturated             | number          |                                                              | olci-lfr, olci-wfr, slstr-frp, slstr-lst, slstr-wst          |
-| s3:tidal_region          | number          |                                                              | olci-lfr, olci-wfr, slstr-frp, slstr-lst, synergy-vgp, slstr-wst, synergy-syn |
-| s3:snow_or_ice           | number          | **DEPRECATED** Use eo:snow_cover instead                     | synergy-v10, synergy-vgp, synergy-vg1                        |
+| Field Name            | Type   | Description |
+| --------------------- | ------ | ----------- |
+| s3:bright             | number |             |
+| s3:closed_sea         | number |             |
+| s3:coastal            | number |             |
+| s3:continental_ice    | number |             |
+| s3:cosmetic           | number |             |
+| s3:dubious_samples    | number |             |
+| s3:duplicated         | number |             |
+| s3:fresh_inland_water | number |             |
+| s3:invalid            | number |             |
+| s3:land               | number |             |
+| s3:open_ocean         | number |             |
+| s3:out_of_range       | number |             |
+| s3:saline_water       | number |             |
+| s3:saturated          | number |             |
+| s3:tidal_region       | number |             |
 
-**s3:gsd**: The data type differs between the products:
-- *integer* used in olci-wfr and olci-lfr - **DEPRECATED** Use gsd instead.
-- [SRAL GSD Object](#sral-gsd-object) used in sral-wat and sral-lan
-- [Synergy GSD Object](#synergy-gsd-object) for synergy-v10, synergy-syn, synergy-aod, synergy-vg1 and synergy-vgp
-- [SLSTR GSD Object](#slstr-gsd-object) for slstr-lst, slstr-frp and slstr-wst
-
----
-
-- [ ] Catalogs
-- [ ] Collections
-- [ ] Item Properties (incl. Summaries in Collections)
-- [x] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
-- [ ] Links
-
-| Field Name            | Type                                              | Description                           |
-| --------------------- | ------------------------------------------------- | ------------------------------------- |
-| s3:shape              | [integer]                                         | **DEPRECATED** Use proj:shape instead |
-| s3:spatial_resolution | [number]                                          | **DEPRECATED**                        |
-| s3:altimetry_bands    | [[Altimetry Band Object](#altimetry-band-object)] | **DEPRECATED** Use eo:bands instead   |
-
-### Altimetry Band Object
-
-| Field Name       | Type   | Description            |
-| ---------------- | ------ | ---------------------- |
-| band_width       | number |                        |
-| description      | string | Detailed multi-line description to explain the band. [CommonMark 0.29](http://commonmark.org/) syntax MAY be used for rich text representation. |
-| frequency_band   | string | `Ku`, `C`, ...         |
-| center_frequency | number | e.g. 5.41, 13.575, ... |
-
-### SRAL GSD Object
-
-| Field Name   | Type    | Description   |
-| ------------ | ------- | ------------- |
-| along-track  | integer | **REQUIRED.** |
-| across-track | integer | **REQUIRED.** |
-
-### Synergy GSD Object
-
-| Field Name | Type                                  | Description   |
-| ---------- | ------------------------------------- | ------------- |
-| OLCI       | integer                               | **REQUIRED.** |
-| SLSTR      | [SLSTR GSD Object](#slstr-gsd-object) | **REQUIRED.** |
-
-### SLSTR GSD Object
-
-| Field Name      | Type    | Description   |
-| --------------- | ------- | ------------- |
-| S1-S6           | integer | **REQUIRED.** |
-| S7-S9 and F1-F2 | integer | **REQUIRED.** |
+> \[!NOTE]
+> Various fields and objects in this extensions have been deprecated.
+> Please see the [document about deprecated fields](deprecated.md) for more information.
 
 ## Contributing
 
