@@ -1,7 +1,7 @@
 # Sentinel-3 Extension Specification
 
 - **Title:** Sentinel-3
-- **Identifier:** <https://stac-extensions.github.io/sentinel-3/v0.1.0/schema.json>
+- **Identifier:** <https://stac-extensions.github.io/sentinel-3/v0.2.0/schema.json>
 - **Field Name Prefix:** s3
 - **Scope:** Item
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal
@@ -33,23 +33,23 @@ The fields in the table below can be used in these parts of STAC documents:
 - [ ] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
 - [ ] Links
 
-| Field Name            | Type   | Description |
-| --------------------- | ------ | ----------- |
-| s3:bright             | number |             |
-| s3:closed_sea         | number |             |
-| s3:coastal            | number |             |
-| s3:continental_ice    | number |             |
-| s3:cosmetic           | number |             |
-| s3:dubious_samples    | number |             |
-| s3:duplicated         | number |             |
-| s3:fresh_inland_water | number |             |
-| s3:invalid            | number |             |
-| s3:land               | number |             |
-| s3:open_ocean         | number |             |
-| s3:out_of_range       | number |             |
-| s3:saline_water       | number |             |
-| s3:saturated          | number |             |
-| s3:tidal_region       | number |             |
+| Field Name            | Type   | Description                                                  |
+| --------------------- | ------ | ------------------------------------------------------------ |
+| s3:bright             | number | Percentage of bright pixels (0-100)                          |
+| s3:closed_sea         | number | Percentage of pixels classified as closed sea (0-100)        |
+| s3:coastal            | number | Percentage of pixels classified as coastal (0-100)           |
+| s3:continental_ice    | number | Percentage of pixels classified as continental ice (0-100)   |
+| s3:cosmetic           | number | Percentage of cosmetic pixels (0-100)                        |
+| s3:dubious_samples    | number | Percentage of dubious pixels (0-100)                         |
+| s3:duplicated         | number | Percentage of duplicated pixels (0-100)                      |
+| s3:fresh_inland_water | number | Percentage of pixels classified as fresh inland water (0-100) |
+| s3:invalid            | number | Percentage of invalid pixels (0-100)                         |
+| s3:land               | number | Percentage of pixels classified as land (0-100)              |
+| s3:open_ocean         | number | Percentage of pixels classified as open ocean (0-100)        |
+| s3:out_of_range       | number | Percentage of out-of-range pixels (0-100)                    |
+| s3:saline_water       | number | Percentage of pixels classified as saline water (0-100)      |
+| s3:saturated          | number | Percentage of saturated pixels (0-100)                       |
+| s3:tidal_region       | number | Percentage of pixels classified as tidal regions (0-100)     |
 
 > \[!NOTE]
 > Various fields and objects in this extensions have been deprecated.
