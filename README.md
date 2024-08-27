@@ -4,20 +4,14 @@
 - **Identifier:** <https://stac-extensions.github.io/sentinel-3/v0.2.0/schema.json>
 - **Field Name Prefix:** s3
 - **Scope:** Item
-- **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Proposal
+- **Extension [Maturity Classification](https://github.com/radiantearth/stac-spec/tree/master/extensions/README.md#extension-maturity):** Deprecated
 - **Owner**: @m-mohr
 
 This document explains the Sentinel-3 Extension to the
 [SpatioTemporal Asset Catalog](https://github.com/radiantearth/stac-spec) (STAC) specification.
 
 > \[!CAUTION]
-> The intention of the first version of the specification was to reflect the existing behavior of the properties
-> prefixed with `s3` as implemented by the [stactools-sentinel3](https://github.com/stactools-packages/sentinel3) package.
-> The following version deprecated most of the fields in favor of other extensions that are not specific to Sentinel-3.
-> The remaining fields are for statistical purposes.
-> If you want to expose the statistal fields, this extension is currently the best approach until a
-> generic approach for STAC has been defined.
-> For all other fields the recommended alternatives should be preferred.
+> This extension is deprecated!
 
 - [Examples](examples/)
 - [JSON Schema](json-schema/schema.json) (todo)
@@ -33,27 +27,81 @@ The fields in the table below can be used in these parts of STAC documents:
 - [ ] Assets (for both Collections and Items, incl. Item Asset Definitions in Collections)
 - [ ] Links
 
-| Field Name            | Type   | Description                                                  |
-| --------------------- | ------ | ------------------------------------------------------------ |
-| s3:bright             | number | Percentage of bright pixels (0-100)                          |
-| s3:closed_sea         | number | Percentage of pixels classified as closed sea (0-100)        |
-| s3:coastal            | number | Percentage of pixels classified as coastal (0-100)           |
-| s3:continental_ice    | number | Percentage of pixels classified as continental ice (0-100)   |
-| s3:cosmetic           | number | Percentage of cosmetic pixels (0-100)                        |
-| s3:dubious_samples    | number | Percentage of dubious pixels (0-100)                         |
-| s3:duplicated         | number | Percentage of duplicated pixels (0-100)                      |
-| s3:fresh_inland_water | number | Percentage of pixels classified as fresh inland water (0-100) |
-| s3:invalid            | number | Percentage of invalid pixels (0-100)                         |
-| s3:land               | number | Percentage of pixels classified as land (0-100)              |
-| s3:open_ocean         | number | Percentage of pixels classified as open ocean (0-100)        |
-| s3:out_of_range       | number | Percentage of out-of-range pixels (0-100)                    |
-| s3:saline_water       | number | Percentage of pixels classified as saline water (0-100)      |
-| s3:saturated          | number | Percentage of saturated pixels (0-100)                       |
-| s3:tidal_region       | number | Percentage of pixels classified as tidal regions (0-100)     |
+| Field Name               | Type            | Description                                                  |
+| ------------------------ | --------------- | ------------------------------------------------------------ |
+| s3:bright                | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:closed_sea            | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:coastal               | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:continental_ice       | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:cosmetic              | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:dubious_samples       | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:duplicated            | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:fresh_inland_water    | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:invalid               | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:land                  | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:open_ocean            | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:out_of_range          | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:saline_water          | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:saturated             | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:tidal_region          | number          | **DEPRECATED.** Use `statistics` instead                     |
+| s3:product_type          | string          | **DEPRECATED.** Use `product:type` instead                   |
+| s3:product_name          | string          | **DEPRECATED.** Use `product:type` instead                   |
+| s3:processing_timeliness | string          | **DEPRECATED.** Use `product:timeliness` and `product:timeliness_category` instead |
+| s3:lrm_mode              | number          | **DEPRECATED.** Use the [Altimetry extension](https://github.com/stac-extensions/altimetry) instead. |
+| s3:sar_mode              | number          | **DEPRECATED.** Use the [Altimetry extension](https://github.com/stac-extensions/altimetry) instead. |
+| s3:gsd                   | see description | **DEPRECATED.** Use `gsd` instead                            |
+| s3:snow_or_ice           | number          | **DEPRECATED** Use `eo:snow_cover` instead                   |
 
-> \[!NOTE]
-> Various fields and objects in this extensions have been deprecated.
-> Please see the [document about deprecated fields](deprecated.md) for more information.
+The fields that are deprecated in favor of the `statistics` field as defined in
+[common metadata](https://github.com/radiantearth/stac-spec/blob/dev/commons/common-metadata.md#statistics-object)
+should remove the `s3:` prefix and use the remainders as the key name in the Statistics Object,
+so for example `fresh_inland_water` instead of `s3:fresh_inland_water`.
+
+**s3:gsd**: The data type differs between the products:
+
+- *integer* used in olci-wfr and olci-lfr - **DEPRECATED** Use gsd instead.
+- [SRAL GSD Object](#sral-gsd-object) used in sral-wat and sral-lan
+- [Synergy GSD Object](#synergy-gsd-object) for synergy-v10, synergy-syn, synergy-aod, synergy-vg1 and synergy-vgp
+- [SLSTR GSD Object](#slstr-gsd-object) for slstr-lst, slstr-frp and slstr-wst
+
+### Altimetry Band Object
+
+**DEPRECATED** Use eo:bands instead.
+
+| Field Name       | Type   | Description            |
+| ---------------- | ------ | ---------------------- |
+| band_width       | number |                        |
+| description      | string | Detailed multi-line description to explain the band. [CommonMark 0.29](http://commonmark.org/) syntax MAY be used for rich text representation. |
+| frequency_band   | string | `Ku`, `C`, ...         |
+| center_frequency | number | e.g. 5.41, 13.575, ... |
+
+### SRAL GSD Object
+
+**DEPRECATED.** Use `gsd` instead, usually defaulting to the value for along-track.
+
+| Field Name   | Type    | Description   |
+| ------------ | ------- | ------------- |
+| along-track  | integer | **REQUIRED.** |
+| across-track | integer | **REQUIRED.** |
+
+### Synergy GSD Object
+
+**DEPRECATED.** Use `gsd` instead, usually defaulting to the value for OLCI.
+
+| Field Name | Type                                  | Description   |
+| ---------- | ------------------------------------- | ------------- |
+| OLCI       | integer                               | **REQUIRED.** |
+| SLSTR      | [SLSTR GSD Object](#slstr-gsd-object) | **REQUIRED.** |
+
+### SLSTR GSD Object
+
+**DEPRECATED.** Use `gsd` instead.
+
+| Field Name      | Type    | Description   |
+| --------------- | ------- | ------------- |
+| S1-S6           | integer | **REQUIRED.** |
+| S7-S9 and F1-F2 | integer | **REQUIRED.** |
+
 
 ## Contributing
 
